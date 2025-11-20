@@ -72,7 +72,7 @@ function App() {
                 <p>Demonstrating API GET (Real News) and local POST/PUT/DELETE (Mock Posts).</p>
             </header>
             <section className="form-section">
-                <h2>{isEditing ? '✏️ Edit Mock Post' : '➕ Create New Mock Post'}</h2>
+                <h2>{isEditing ? ' Edit Mock Post' : ' Create New Mock Post'}</h2>
                 <form onSubmit={handleFormSubmit} className="crud-form">
                     <input 
                         type="text" 
@@ -109,7 +109,7 @@ function App() {
             <hr />
 
             <section className="news-feed">
-                <h2>🌎 Real News Headlines (GET)</h2>
+                <h2> Real News Headlines (GET)</h2>
                 <div className="card-grid">
                     {news.map(item => (
                         <NewsCard key={item.id} item={item} isReal={true} />
