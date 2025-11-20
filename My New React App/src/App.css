@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5f809b;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #5d8c66;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 { color: #0c0101; }
+hr {
+    border: none;
+    border-top: 2px solid #755353;
+    margin: 40px 0;
+}
+.crud-form input,
+.crud-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.crud-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s;
+}
+.crud-form button:hover {
+    background-color: #218838;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.news-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+}
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.news-card h3 {
+    padding: 10px 15px 0;
+    margin: 0;
+    color: #333;
+}
+.news-card p {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: #666;
+    flex-grow: 1;
+}
+.news-card .author {
+    font-style: italic;
+    color: #007bff;
+}
+.news-card .actions {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+.actions button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.edit-btn { background-color: #ffc107; color: #333; }
+.delete-btn { background-color: #dc3545; color: white; }
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
